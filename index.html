@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Fitness Tracker App</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Background Glow -->
+
+    <div class="bg bg1"></div>
+    <div class="bg bg2"></div>
+
+    <!-- Main Container -->
+
+    <div class="container">
+
+        <!-- Header -->
+
+        <div class="header">
+
+            <img
+            src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png"
+            alt="Fitness">
+
+            <h1>Fitness Tracker</h1>
+
+        </div>
+
+        <!-- Popup Fitness Image -->
+
+        <div class="fitness-image">
+
+            <img id="fitnessImg"
+            src="https://cdn-icons-png.flaticon.com/512/2964/2964514.png"
+            alt="Workout">
+
+        </div>
+
+        <!-- Form -->
+
+        <div class="form-section">
+
+            <input type="text"
+                   id="workout"
+                   placeholder="Workout Name">
+
+            <input type="number"
+                   id="duration"
+                   placeholder="Duration (minutes)">
+
+            <input type="number"
+                   id="calories"
+                   placeholder="Calories Burned">
+
+            <button id="addBtn">
+                Add Workout
+            </button>
+
+        </div>
+
+        <!-- Summary -->
+
+        <div class="summary">
+
+            <div class="card">
+
+                <h2 id="totalWorkouts">0</h2>
+
+                <p>Total Workouts</p>
+
+            </div>
+
+            <div class="card">
+
+                <h2 id="totalCalories">0</h2>
+
+                <p>Total Calories</p>
+
+            </div>
+
+        </div>
+
+        <!-- Workout List -->
+
+        <div id="workoutList"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
